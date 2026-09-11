@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"node build-tokens.mjs"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,16 @@
   },
   "allowScripts": {
     "@parcel/watcher@2.5.1": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benchel/chicken_plusplus-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benchel/chicken_plusplus-website/issues"
+  },
+  "homepage": "https://github.com/benchel/chicken_plusplus-website#readme",
+  "devDependencies": {
+    "style-dictionary": "^5.5.3"
   }
 }
