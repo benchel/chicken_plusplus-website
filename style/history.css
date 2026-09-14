@@ -1,0 +1,192 @@
+.mainpage{
+    padding-top: 32px;
+}
+.first-contents{
+  padding: 20px 20px;
+}
+
+.first-paragraph{
+  text-align: center;
+  .title{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle{
+    font-size: 16px;
+    color:gray;
+    margin-bottom: 20px;
+  }
+
+}
+
+.url-screen{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  .iframe{
+    width: 600px;
+    height: 400px;
+  }
+  margin-bottom: 20px;
+}
+
+.middle-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  color: gray;
+  margin-bottom: 32px;
+  
+  .first-word{
+    margin-right: 10px;
+    font-size: clamp(16px, 1.8vw, 32px);
+  }
+  .second-word{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: clamp(16px, 1.8vw, 64px);
+  }
+
+  .third-word{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: clamp(16px, 1.8vw, 64px);
+  }
+
+  .fourth-word{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: clamp(16px, 1.8vw, 32px);
+    font-weight: bold;
+  }
+
+  .divider{
+    font-size: clamp(16px, 1.8vw, 64px);
+  }
+}
+
+/* 전체 영역 */
+.contents {
+  width: 100%;
+  padding: 30px 0 50px;
+  text-align: center;
+}
+
+/* 제목 */
+.contents h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+/* 부제목 */
+.subtitle {
+  margin: 0 0 20px;
+  font-size: 12px;
+}
+
+
+/* 영상 전체 영역 */
+.video-container {
+  width: 100%;
+}
+
+
+/* 라디오 버튼 숨기기 */
+.video-container > input {
+  display: none;
+}
+
+
+/* 중앙 영상 */
+.main-video {
+  display: none;
+  width: 80%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 20px;
+}
+
+
+/* iframe */
+.main-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* 선택된 영상만 표시 */
+
+#video1:checked ~ .video1 {
+  display: block;
+}
+
+#video2:checked ~ .video2 {
+  display: block;
+}
+
+#video3:checked ~ .video3 {
+  display: block;
+}
+
+#video4:checked ~ .video4 {
+  display: block;
+}
+
+#video5:checked ~ .video5 {
+  display: block;
+}
+
+
+/* 기본: PC */
+.thumbnail-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.thumbnail-list label {
+  flex: 0 0 180px;
+}
+
+
+/* 화면이 600px 이하 */
+@media (max-width: 600px) {
+
+  .thumbnail-list {
+    gap: 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .thumbnail-list label {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .thumbnail-list img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+/* 썸네일 글자 */
+.thumbnail-list span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #555;
+}
+
+
+/* 마우스를 올렸을 때 */
+.thumbnail-list label:hover img {
+  opacity: 0.7;
+}
