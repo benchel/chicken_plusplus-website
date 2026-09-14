@@ -5,8 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="./style/output.css"/>
+    <link rel="stylesheet" href="./style/common/reset.css"/>
+    <link rel="stylesheet" href="./style/common/layout.css"/>
+    <script src="./js/header_ctrl.js"></script>
 </head>
 <body>
-    <h2 class="text-mustard-800">테스트</h2>
+    <div class="dimmed"></div>
+    <div class="site-container">
+        <header class="header-pc">
+            <div class="log-container">
+                <div class="logo font-Myanmar_Khyay">
+                    <a href="/index.html">
+                        <h2>C++</h2>
+                        <span>치킨플러스플러스</span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-container">
+                <nav class="menu_bar">
+                    <ul class="menu_list">
+                        <li><a href="/history.html">C++소개</a></li>
+                        <li><a href="/menu.html">메뉴</a></li>
+                        <li><a href="/find_store.html">매장찾기</a></li>
+                        <li><a href="/event.html">이벤트</a></li>
+                        <li><a href="/information.html">창업문의</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sign_inup-container">
+                <p class="sign_inup-bar">
+                    <span><a href="/sign_in.html">로그인</a></span>
+                    <span>/</span>
+                    <span><a href="/register.html">회원가입</a></span>
+                </p>
+            </div>
+        </header>
+        <header class="header-mobile">
+            <div class="folded">
+                <div class="log-container">
+                    <div class="logo font-Myanmar_Khyay">
+                        <a href="#" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                            <h2>C++</h2>
+                            <span>치킨플러스플러스</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <nav class="menu_toggle">
+                        <ul class="menu_list">
+                            <li><span>ㅡ</span></li>
+                            <li><span>ㅡ</span></li>
+                            <li><span>ㅡ</span></li>
+                        </ul>
+                    </nav>
+                </div>                                
+            </div>
+            <div class="spread">
+                <div class="spread-inner">
+                    <div class="log-container">
+                        <div class="logo font-Myanmar_Khyay">
+                            <a href="/index.html" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                                <h2>C++</h2>
+                                <span>치킨플러스플러스</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <nav class="menu_bar">
+                            <ul class="menu_list">
+                                <li><a href="/history.html">C++소개</a></li>
+                                <li><a href="/menu.html">메뉴</a></li>
+                                <li><a href="/find_store.html">매장찾기</a></li>
+                                <li><a href="/event.html">이벤트</a></li>
+                                <li><a href="/information.html">창업문의</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sign_inup-container">
+                        <p class="sign_inup-bar">
+                            <span><a href="/sign_in.html">로그인</a></span>
+                            <span>/</span>
+                            <span><a href="/register.html">회원가입</a></span>
+                        </p>
+                    </div> 
+                    <button type="button" class="menu_close">닫기</button>                                      
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- 각자 작업물이 들어갈 부분 -->
+            <h2 class="text-mustard-800">테스트</h2>
+        </main>
+        <footer>
+            <div class="log-container">
+                <div class="logo font-Myanmar_Khyay">
+                    <a href="/index.html" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                        <h2>C++</h2>
+                        <span>치킨플러스플러스</span>
+                    </a>
+                </div>
+            </div>
+            <div class="comp_info-container">
+                <p class="comp_name">(주) 치킨플러스플러스</p>
+                <p class="comp_number">02-000-0000</p>
+                <p class="comp_addr">서을특별시 관악구 치킨을 위대하게 24길 8맛의정수빌딩</p>
+                <p class="terms_of_service">
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                    <span>고객센터</span>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
