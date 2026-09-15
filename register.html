@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
+    <link rel="stylesheet" href="./style/output.css"/>
     <link rel="stylesheet" href="./style/register.css"/>
-    <link rel="stylesheet" href="../learn-css/reset.css"/>
+    <link rel="stylesheet" href="./style/common/reset.css"/>
 </head>
 <body>
     <main class="register">
     <article class="register-card">
         <div class="register-content">
             <div class="header">
-                <p class="register-head">환영합니다!</p>
-                <p class="register-head2">
-                아래 약관에 동의하시고 BBQ와 함께 하세요!   </p>
+                <p class="register-head">환영합니다!<br>아래 약관에 동의하시고 <a class="logo">치킨플러스플러스</a>와 함께 하세요!</p>
+                <!-- <a href="javascript:history.back()" class="back-btn">Backup</a> -->
+                <button type="button" class="back-btn" onclick="history.back()">
+                    Back
+                </button>
             </div>
         <div class="register-all-agree" >
             <input class="register-checkbox" type="checkbox"/> 전체동의
@@ -41,13 +43,13 @@
             </div>
 
             
-            <div class="register-all-agree">
-                <input class="register-checkbox" type="checkbox"/> 앱푸시      
-                <input class="register-checkbox" type="checkbox"/> SMS
-                <input class="register-checkbox" type="checkbox"/> 이메일
+            <div class="register-all-checkbox">
+                <div><input class="register-checkbox" type="checkbox"/> 앱푸시</div>      
+                <div><input class="register-checkbox" type="checkbox"/> SMS</div>      
+                <div><input class="register-checkbox" type="checkbox"/> 이메일</div>      
             </div>
 
-            <div class="register">
+            <div class="register-caution">
                 ※ 보유 및 이용기간 : 회원탈퇴 시 또는 마케팅 동의 철회 시까지
             </div>
             

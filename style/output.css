@@ -11,12 +11,15 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-magenta: #871d34;
+    --color-black: #000000;
+    --color-white: #ffffff;
     --color-light_pink-300: #dec9c9;
     --color-light_pink-400: #e5b1b1;
     --color-light_pink-500: #e68f8f;
     --color-mustard-500: #ffe199;
     --color-mustard-800: #ffb300;
     --color-pigeonHb-600: #bf3139;
+    --color-MediumBlue-500: #1100ea;
     --color-MediumBlue-700: #1206b1;
     --font-Myanmar_Khyay: "Myanmar Khyay";
   }
