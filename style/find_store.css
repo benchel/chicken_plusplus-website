@@ -1,0 +1,162 @@
+.find_store-banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5em;
+
+  .find_store-dimmed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 30%;
+  }
+
+  .catchphrase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.find_store-container {
+  display: flex;
+  flex-direction: column;
+  gap : 2em;
+  margin-bottom: 2em;
+
+    .breadcrumb {
+      text-align: center;
+        span {
+            color: var(--color-mustard-800);
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+
+    .search_section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap : 1em;
+
+      font-size: 1.2rem;
+
+        .search_category{
+          padding: 5px 5px;
+          border: solid 1px black;
+        }
+
+        .search-keyword{
+            padding: 5px 5px;
+            border: solid 1px black;
+        }
+
+        .btn-search{
+          padding: 5px 5px;
+          padding: 5px 40px;
+          background-color: var(--color-mustard-800);
+          border-radius: 8px;
+          color : white;
+        }
+    }
+}
+
+.search_result {
+  font-size: 1.2em;
+
+  .result_header {
+    min-height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--color-pigeonHb-600);
+    color: var(--color-light_pink-300);
+
+    li:nth-child(2){
+      flex: 3;
+    }
+
+    li{
+      padding: 5px 5px;
+      flex: 1;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .result_body {
+    background-color: var(--color-light_pink-400);
+    color: white;
+
+    .result_body_row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      li:nth-child(2){
+        flex: 3;
+      }
+
+      li{
+        padding: 5px 5px;
+        flex: 1;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        line-height: 1.5;
+
+        .road_name{
+          padding-left: 10px;
+          text-align: left;
+        }
+
+        .street_number{
+          padding-left: 10px;
+          text-align: left;
+        }
+      }
+
+      .badge{
+        background-color: var(--color-magenta);
+        padding: 3px 20px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+      }
+
+      .map_icon{
+        margin: auto;
+        max-width: 52px;
+        max-height: 52px;
+      }
+    }
+  }
+}
+
+.view_section{
+  background-color: var(--color-mustard-500);
+  min-height: 200px;
+
+  iframe{
+    min-height: 200px;
+    width: 100%;
+  }
+}
