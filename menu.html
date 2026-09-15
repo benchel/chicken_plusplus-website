@@ -1,16 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css"/>
+    
     <link rel="stylesheet" href="./style/menu.css"/>
+    <link rel="stylesheet" href="./style/output.css"/>
+    <link rel="stylesheet" href="./style/common/reset.css"/>
+    <link rel="stylesheet" href="./style/common/layout.css"/>
+    <script src="./js/header_ctrl.js"></script>
 </head>
 <body>
-    
-    <main class="main-content">
+    <div class="dimmed"></div>
+    <div class="site-container">
+        <header class="header-pc">
+            <div class="log-container">
+                <div class="logo font-Myanmar_Khyay">
+                    <a href="/index.html">
+                        <h2>C++</h2>
+                        <span>치킨플러스플러스</span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-container">
+                <nav class="menu_bar">
+                    <ul class="menu_list">
+                        <li><a href="/history.html">C++소개</a></li>
+                        <li><a href="/menu.html">메뉴</a></li>
+                        <li><a href="/find_store.html">매장찾기</a></li>
+                        <li><a href="/event.html">이벤트</a></li>
+                        <li><a href="/information.html">창업문의</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sign_inup-container">
+                <p class="sign_inup-bar">
+                    <span><a href="/sign_in.html">로그인</a></span>
+                    <span>/</span>
+                    <span><a href="/register.html">회원가입</a></span>
+                </p>
+            </div>
+        </header>
+        <header class="header-mobile">
+            <div class="folded">
+                <div class="log-container">
+                    <div class="logo font-Myanmar_Khyay">
+                        <a href="#" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                            <h2>C++</h2>
+                            <span>치킨플러스플러스</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <nav class="menu_toggle">
+                        <ul class="menu_list">
+                            <li><span>ㅡ</span></li>
+                            <li><span>ㅡ</span></li>
+                            <li><span>ㅡ</span></li>
+                        </ul>
+                    </nav>
+                </div>                                
+            </div>
+            <div class="spread">
+                <div class="spread-inner">
+                    <div class="log-container">
+                        <div class="logo font-Myanmar_Khyay">
+                            <a href="/index.html" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                                <h2>C++</h2>
+                                <span>치킨플러스플러스</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <nav class="menu_bar">
+                            <ul class="menu_list">
+                                <li><a href="/history.html">C++소개</a></li>
+                                <li><a href="/menu.html">메뉴</a></li>
+                                <li><a href="/find_store.html">매장찾기</a></li>
+                                <li><a href="/event.html">이벤트</a></li>
+                                <li><a href="/information.html">창업문의</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sign_inup-container">
+                        <p class="sign_inup-bar">
+                            <span><a href="/sign_in.html">로그인</a></span>
+                            <span>/</span>
+                            <span><a href="/register.html">회원가입</a></span>
+                        </p>
+                    </div> 
+                    <button type="button" class="menu_close">닫기</button>                                      
+                </div>
+            </div>
+        </header>
+
+                <main class="main-content">
     <section id="courses">
         <!-- Section Heading -->
         <div class="section-heading">
@@ -22,13 +107,14 @@
 
         <!-- Course List -->
         <div class="card-list">
+        
         <article class="course-card">
             <div class="card-thumbnail">
-            <img src="./assets/menu-1.png" alt="과제 로고입니다." />
-            <span class="badge">입문</span>
+            <img src="./assets/image/menu_soywingbox.png" alt="간장윙 치킨 박스입니다." />
+            <span class="badge badge1">매진 임박</span>
         </div>
         <div class="card-content">
-            <h2>간장윙박스20PCS</h2>
+            <h2 class="menu-title">간장윙박스20PCS</h2>
             <p class="description">
             간장소스의 풍부한 맛을 즐길 수 있는
             겉바속촉 윙 메뉴[윙+봉 20조각]
@@ -43,21 +129,53 @@
             </div>
 
                 <button popovertarget="popup" class="button">
-                팝업 열기
+                자세히 보기
                 </button>
                 <div>
-
+                    
                     <dialog id="popup" popover>
-
+                    
                     <button popovertarget="popup">
                         ✕
                     </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu_soywingbox.png" alt="간장윙 치킨 박스입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
 
-                    <h2>전체 화면 팝업</h2>
+                    <div class="popup-right">
+                        <h2 class="">간장윙박스20PCS</h2>
+                        <p class="popup-text">
+                            간장소스의 풍부한 맛을 즐길 수 있는<br>
+                            겉바속촉 윙 메뉴[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(태국산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price"> ₩ 23,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                       
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <div class="side_menu-info">웨지감자 4000원</div>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <p>
-                        JavaScript 없이 만든 팝업입니다.
+                        
                     </p>
+                    </div>
+
 
                     </dialog>
                 </div>
@@ -70,11 +188,11 @@
 
         <article class="course-card">
             <div class="card-thumbnail">
-            <img src="./assets/menu-2.png" alt="과제 로고입니다." />
-            <span class="badge">입문</span>
+            <img src="./assets/image/menu_redwingbox.png" alt="레드윙 치킨입니다." />
+            <span class="badge badge2">단짠</span>
             </div>
             <div class="card-content">
-            <h2>레드윙박스20PCS</h2>
+            <h2 class="menu-title">레드윙박스20PCS</h2>
             <p class="description">
             국내산 청양 홍고추의 매콤함을 즐길 수 있는
             겉바속촉 윙 메뉴[윙+봉 20조각]
@@ -87,17 +205,69 @@
                 <strong class="price">23,000원</strong>
                 
             </div>
-            <a class="course-link" href="#">자세히보기</a>
+            
+                <button popovertarget="popup1" class="button">
+                자세히 보기
+                </button>
+                <div>
+                    
+                    <dialog id="popup1" popover>
+                    
+                    <button popovertarget="popup1">
+                        ✕
+                    </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu_redwingbox.png" alt="레드윙 치킨입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
+
+                    <div class="popup-right">
+                        <h2 class="">레드윙박스20PCS</h2>
+                        <p class="popup-text">
+                            국내산 청양 홍고추의 매콤함을 즐길 수 있는<br>
+                            겉바속촉 윙 메뉴[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(태국산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price"> ₩ 23,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                       
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <p>웨지감자 4000원</p>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        
+                    </p>
+                    </div>
+
+
+                    </dialog>
+                </div>
+
         </div>
         </article>
             
         <article class="course-card">
             <div class="card-thumbnail">
-            <img src="./assets/menu-3.png" alt="과제로고 입니다." />
-            <span class="badge">입문</span>
+            <img src="./assets/image/menu_marahotwingbox.png" alt="과제로고 입니다." />
+            <span class="badge badge3">🌶🌶🌶</span>
             </div>
             <div class="card-content">
-            <h2>마라레드윙박스20PCS</h2>
+            <h2 class="menu-title">마라레드윙박스20PCS</h2>
             <p class="description">
             맛있게 매운 레드 소스에 마라를 더해
             얼얼하고 화끈한 윙 메뉴[윙+봉 20조각]
@@ -110,17 +280,71 @@
                 <strong class="price">23,000원</strong>
                 
             </div>
-            <a class="course-link" href="#">자세히보기</a>
+            
+                <button popovertarget="popup2" class="button">
+                자세히 보기
+                </button>
+                <div>
+                    
+                    <dialog id="popup2" popover>
+                    
+                    <button popovertarget="popup2">
+                        ✕
+                    </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu_marahotwingbox.png" alt="마라핫 치킨 박스입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
+
+                    <div class="popup-right">
+                        <h2 class="">마라레드윙박스20PCS</h2>
+                        <p class="popup-text">
+                            맛있게 매운 레드 소스에 마라를 더해<br>
+                            얼얼하고 화끈한 윙 메뉴[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(태국산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price text-mustard-600"> ₩ 23,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                        
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <p>웨지감자 4000원</p>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        
+                    </p>
+                    </div>
+
+
+                    </dialog>
+                </div>
+
+
+
         </div>
         </article>
 
         <article class="course-card">
             <div class="card-thumbnail">
-            <img src="./assets/menu-4.png" alt="과제로고 입니다." />
-            <span class="badge">입문</span>
+            <img src="./assets/image/menu-honeygarlicwingbox.png" alt="과제로고 입니다." />
+            <span class="badge badge4">달콤</span>
             </div>
             <div class="card-content">
-            <h2>허니갈링윙박스20PCS</h2>
+            <h2 class="menu-title">허니갈링윙박스20PCS</h2>
             <p class="description">
                 꿀의 달콤함과 마늘의 알싸함이
                 조화로운 윙 메뉴[윙+봉 20조각]
@@ -133,21 +357,238 @@
                 <strong class="price">23,000원</strong>
                 
             </div>
-            <a class="course-link" href="#">자세히보기</a>
+            
+                <button popovertarget="popup3" class="button">
+                자세히 보기
+                </button>
+                <div>
+                    
+                    <dialog id="popup3" popover>
+                    
+                    <button popovertarget="popup3">
+                        ✕
+                    </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu-honeygarlicwingbox.png" alt="허니갈링윙 치킨 박스입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
+
+                    <div class="popup-right">
+                        <h2 class="">허니갈릭윙박스20PCS</h2>
+                        <p class="popup-text">
+                            꿀의 달콤함과 마늘의 알싸함이<br>
+                            조화로운 윙 메뉴[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(태국산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price"> ₩ 23,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                        
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <p>웨지감자 4000원</p>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        
+                    </p>
+                    </div>
+
+
+                    </dialog>
+                </div>
         </div>
         </article>
+        <article class="course-card">
+            <div class="card-thumbnail">
+            <img src="./assets/image/menu_golden_olive.PNG" alt="과제로고 입니다." />
+            <span class="badge badge5">20주년</span>
+            </div>
+            <div class="card-content">
+            <h2 class="menu-title">황금올리브치킨20PCS</h2>
+            <p class="description">
+                겉은 바삭 육즙 가득한 부드러운 속살이 환상적인
+                후라이드의 대명사 황금올리브치킨
+            </p>
+            <p class="description">
+                ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+            </p>
+            <div class="card-bottom">
+                권장소비자가격
+                <strong class="price">23,000원</strong>
+                
+            </div>
+            
+                <button popovertarget="popup4" class="button">
+                자세히 보기
+                </button>
+                <div>
+                    
+                    <dialog id="popup4" popover>
+                    
+                    <button popovertarget="popup4">
+                        ✕
+                    </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu_soywingbox.png" alt="허니갈링윙 치킨 박스입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
+
+                    <div class="popup-right">
+                        <h2 class="">황금올리브치킨20PCS</h2>
+                        <p class="popup-text">
+                            겉은 바삭 육즙 가득한 부드러운 속살이 환상적인<br>
+                            후라이드의 대명사 황금올리브치킨[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(국내산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price"> ₩ 23,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                        
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <p>웨지감자 4000원</p>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        
+                    </p>
+                    </div>
+
+
+                    </dialog>
+                </div>
+        </div>
+        </article>
+        
+
+            <article class="course-card">
+            <div class="card-thumbnail">
+            <img src="./assets/image/menu_bburingcle.png" alt="과제로고 입니다." />
+            <span class="badge badge6">Best</span>
+            </div>
+            <div class="card-content">
+            <h2 class="menu-title">뿌링클치킨20PCS</h2>
+            <p class="description">
+                달콤한 마법의 시즈닝이 가득 뿌려진 바삭한 치킨에
+                새콤한 뿌링뿌링소스를 곁들인 메뉴
+            </p>
+            <p class="description">
+                ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+            </p>
+            <div class="card-bottom">
+                권장소비자가격
+                <strong class="price">21,000원</strong>
+                
+            </div>
+            
+                <button popovertarget="popup5" class="button">
+                자세히 보기
+                </button>
+                <div>
+                    
+                    <dialog id="popup5" popover>
+                    
+                    <button popovertarget="popup5">
+                        ✕
+                    </button>
+                    <div class="popup-content">
+                    <div class="popup-left">
+                    <img class="popup-image" src="./assets/image/menu_bburingcle.png" alt="허니갈링윙 치킨 박스입니다." />
+                    <p class="popup-text">모든 제품 사진은 연출된 이미지로, 실제 제공되는 제품과는 다를 수 있습니다.</p>
+                    </div>
+
+                    <div class="popup-right">
+                        <h2 class="">뿌링클치킨20PCS</h2>
+                        <p class="popup-text">
+                            달콤한 마법의 시즈닝이 가득 뿌려진 바삭한 치킨에<br>
+                            새콤한 뿌링뿌링소스를 곁들인 시그니처 메뉴[윙+봉 20조각]
+                        </p>
+
+                        <p class="popup-text font-size-body">
+                            ※ 원육 수급 상황에 따라 일부 매장에서는 [윙+봉] 20<br>조각 메뉴가 [윙] 20조각 으로 제공될 수 있습니다.
+                        </p>
+                        <h2 class="popup-text-strong">원산지 : 닭고기(국내산)</h2>
+                        <p class="price">권장소비자가격</p> <h2 class="price"> ₩ 21,000</h2>
+                        <p class="caution">※ 매장마다 판매 가격이 상이 할 수 있습니다.</p>
+                        
+                        <h2 class="recommend"> 함께 추천 드리는 메뉴</h2>
+                        <div class="recommend-images">
+                            <div class="popup-imageri">
+                                <img src="./assets/image/menu_wedgepotato.png" alt="웨지 감자입니다." />
+                                <p>웨지감자 4000원</p>
+                            </div>
+                            <div class="popup-imagele">
+                                <img src="./assets/image/menu_friedrice.jpg" alt="볶음밥입니다." />
+                                <p>궁중닭갈비볶음밥 4000원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        
+                    </p>
+                    </div>
+
+
+                    </dialog>
+                </div>
+        </div>
+        </article>
+
+
         </div>
 
         
     </section> 
 
-    <!-- <dialog open> 
-        <h2> 팝업창! </h2>
-    </dialog> -->
     
-    </main>
+
+        </main>
+        <footer>
+            <div class="log-container">
+                <div class="logo font-Myanmar_Khyay">
+                    <a href="/index.html" aria-label="치킨플러스플러스 로고(페이지 홈으로 이동)">
+                        <h2>C++</h2>
+                        <span>치킨플러스플러스</span>
+                    </a>
+                </div>
+            </div>
+            <div class="comp_info-container">
+                <p class="comp_name">(주) 치킨플러스플러스</p>
+                <p class="comp_number">02-000-0000</p>
+                <p class="comp_addr">서을특별시 관악구 치킨을 위대하게 24길 8맛의정수빌딩</p>
+                <p class="terms_of_service">
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                    <span>고객센터</span>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
-
-
- 

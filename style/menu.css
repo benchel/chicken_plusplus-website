@@ -1,13 +1,13 @@
 body{
-  background-color: aliceblue;
+  font-family: 'Noto Sans KR';
 }
 
 .site-header{
   position: sticky;
   top:0;
   z-index: 10;
-  background-color: white;
-  border-bottom: 1px solid #eee;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
   opacity: 0;
   transform: translateY(-30px);
   animation: header 0.3s forwards;
@@ -51,7 +51,7 @@ body{
   margin: 0 auto;
   padding-block: 64px;
   padding-inline: 2rem;
-  background-color: white;
+  background-color: var(--color-white);
 
 }
 
@@ -85,7 +85,7 @@ body{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid var(--color-white);
   background-color: #fff;
   animation: move-y 0.3s ease-in-out forwards;
 
@@ -106,22 +106,48 @@ body{
     }
   }
 
-  .badge{
-    padding: 6px 10px;
-    background-color: dodgerblue;
-    color:white;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: bold;
-    position: absolute;
-    left: 16px;
-    top: 16px;
-  }
+.badge {
+  padding: 6px 10px;
+  color: var(--color-white);
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+/* 각각의 색상 */
+.badge1 {
+  background-color: var(--color-MediumBlue-500);
+}
+
+.badge2 {
+  background-color: var(--color-light_pink-500);
+}
+
+.badge3 {
+  background-color: var(--color-magenta);
+}
+
+.badge4 {
+  background-color: var(--color-mustard-800);
+}
+
+.badge5 {
+  background-color: var(--color-MediumBlue-500);
+}
+
+.badge6 {
+  background-color: var(--color-black);
+}
 
   &:nth-child(1){animation-delay: 0.3s;}
   &:nth-child(2){animation-delay: 0.6s;}
   &:nth-child(3){animation-delay: 0.9s;}
-
+  &:nth-child(4){animation-delay: 1.2s;}
+  &:nth-child(5){animation-delay: 1.5s;}
+  &:nth-child(6){animation-delay: 1.8s;}
 }
 
 
@@ -133,19 +159,36 @@ body{
 
   animation: move-x 0.3s forwards;
   opacity: 0;
+  line-height: 1.2;
+  .menu-title{
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
   .category{
-    color: dodgerblue;
+    color: var(--color-MediumBlue-500);
     font-weight: bold;
   }
   h2{
     font-size: 1.5rem;
     font-weight: bold;
-
+    margin-bottom: 8px;
   }
   .description{
     color: rgb(83, 83, 83);
+    margin-bottom: 8px;
+  }
+  .card-bottom{
+    .price{
+      font-size: 1.5rem;      font-weight: bold;
+      
+    }
+    
   }
 }
+
+
+
 
 @keyframes tilt-shaking {
   0% { transform: rotate(0deg); }
@@ -187,7 +230,8 @@ body{
 }
 
 
-#popup {
+#popup, #popup1, #popup2, #popup3, #popup4, #popup5{
+  
   
   width: 50vw;
   height: 50vh;
@@ -197,13 +241,88 @@ body{
 
   border: none;
   box-sizing: border-box;
+
+  border-radius: 32px;
 }
+
+
 .button{
+  
   margin-top: 1rem;
   border-radius: 8px;
   padding: 4px 8px;
+  border: 1px solid var(--color-mustard-800);
+  color: var(--color-mustard-800);
 }
 
 #popup::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: var(--color-black);
+  opacity: 50%;
+
+}
+
+.popup-content{
+  
+  display: flex;
+  
+  height: 100%;
+  margin: 1rem 1rem;
+  line-height: 1.5;
+  border-radius: 16px;
+  
+
+  .popup-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    border-right: 1px solid rgb(199, 199, 199); 
+    margin: 1rem 1rem;
+    .popup-text{ 
+      color: gray;
+      
+      
+    }
+    .popup-image{
+    width: auto;
+    height: auto;
+    object-fit: fill;
+
+
+  }
+  }
+
+  .popup-right{
+    width: 50%;
+    line-height: 1.5;
+    .popup-text-strong{
+      margin: 10px;
+      font-weight: bold;
+    }
+    .price{
+      text-align: right;
+      color: var(--color-mustard-800);
+    }
+    .price-value{
+      text-align: right;
+    }
+    .recommend{
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: (--color-mustard-800);
+    }
+    .recommend-images{
+
+      display: flex;
+      .popup-imageri{
+        width: 50%;
+        text-align: center;
+      }
+      .popup-imagele{
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
 }
