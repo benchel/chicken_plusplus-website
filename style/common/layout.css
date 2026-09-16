@@ -155,7 +155,11 @@ main{
 
 /* footer */
 footer{
+    padding-top: 2em;
+    margin-bottom: 2em;
+    border-top: solid 1px black;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     .log-container{
@@ -163,9 +167,26 @@ footer{
     }
 
     .comp_info-container{
-        flex : 3;
+        flex : 2;
         text-align: start;
-        line-height: 1.5;
+        line-height: 2;
+
+        p[class^=comp] {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .comp_name{
+            color: var(--color-magenta);
+        }
+
+        .comp_number{
+            color: var(--color-magenta);
+        }
+
+        .comp_addr{
+            color: var(--color-mustard-800);
+        }
     }
 }
 
