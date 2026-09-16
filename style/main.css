@@ -1,0 +1,148 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap : 4em;
+}
+
+.slide-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+
+    div[class^="slie-ctrl_"]{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+}
+
+.slide-container{
+    position: relative;
+    width: 80%;
+    min-height: 400px;
+    overflow: hidden;
+
+    .slides{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        
+        animation-delay: 2s;
+        animation-duration: 6s;
+        animation-name: slide;
+        animation-iteration-count: infinite;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0;
+
+        .slide{
+            flex-shrink: 0;
+            
+            width: 100%;
+            height: 100%;
+            
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+
+  50% {
+    margin-left: 0%;
+    left: -100%;
+  }
+
+  100% {
+    margin-left: 0%;
+    left: -200%;
+  } 
+}
+
+.chicken_menu_intro{
+  padding-left: 4em;
+  padding-right: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+
+
+  div{
+    padding: 2em 2em;
+    flex: 1;
+
+    .title{
+      color: var(--color-light_pink-500);
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    a{
+      img {
+        margin-inline: auto;
+      }
+    }
+
+    p{
+      line-height: 1.5;
+    }
+    .menu_name{
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .menu_price{
+      text-align: center;
+    }
+
+  }
+}
+
+.store_owner_hire_intro{
+  margin-bottom: 10em;
+
+  .banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-height: 120px;
+    background-color: var(--color-mustard-500);
+  }
+
+  .log-container {
+    flex: 1;
+  }
+
+  .store_owner_hire-container{
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 1.4em;
+      color: var(--color-magenta);
+    }
+  }
+}
