@@ -131,7 +131,11 @@ npm install
 의존성 설치 후 `index.html`을 브라우저에서 열거나, VS Code의 Live Server와 같은 정적 파일 서버를 사용해 실행할 수 있습니다.
 
 ## Git Convention
-없음
+
+branch 이름 = 작업파트 
+
+(예) event 이벤트 페이지 작업할 때만 사용 
+작업이 끝나면 삭제
 
 ## 배포 주소
 https://benchel.github.io/chicken_plusplus-website/
