@@ -1,6 +1,15 @@
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
 .event_banner {
   width: 100%;
+  max-height: 300px;
+  overflow: hidden;
   position: relative;
+  
 
   .event_banner_dimmed {
     position: relative;
@@ -17,7 +26,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3em;
     color: white;
   }
 

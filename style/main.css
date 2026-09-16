@@ -27,7 +27,6 @@ main {
 .slide-container{
     position: relative;
     width: 80%;
-    min-height: 400px;
     overflow: hidden;
 
     .slides{
@@ -58,7 +57,6 @@ main {
         }
     }
 }
-
 
 @keyframes slide {
   0% {
@@ -117,7 +115,7 @@ main {
 }
 
 .store_owner_hire_intro{
-  margin-bottom: 10em;
+  margin-bottom: 2em;
 
   .banner{
     position: relative;
@@ -146,3 +144,21 @@ main {
     }
   }
 }
+
+/* mobile */
+@media (width < 1000px) {
+  .chicken_menu_intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+  }
+}
+
+/* pc */
+@media (width > 1000px) {
+  .slide-container{
+    min-height: 400px;
+  }
+}
+
