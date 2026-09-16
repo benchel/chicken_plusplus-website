@@ -1,0 +1,568 @@
+
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: var(--color-pigeonHb-700);
+  padding: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+
+.main-page{
+  
+}
+.contents{
+  background-color: var(--color-pigeonHb-700);
+
+}
+
+.logo{
+      line-height: 1.2;
+
+      h2 { 
+          font-size: 2rem;
+          font-weight: bold;
+         }
+  }
+
+.menu{
+  padding-top: 20px;
+  .button-type{
+    color: var(--color-white);
+    
+  }
+  .subtitle{
+    font-weight: bold;
+    color: var(--color-white);
+  }
+
+}
+
+.contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .contents-header{
+    color: var(--color-white);
+    opacity: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+  .contents-header2{
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  .open-guide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    .gold-chicken{
+      
+      width: 40%;
+      height: 40%;
+    }
+
+    .contents-text{
+      margin-left: 2rem;
+
+    }
+
+  }
+
+  .second-guide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: move-y 0.3s ease-in-out forwards;
+    margin-bottom: 2rem;
+    .bburingcle{
+      
+      width: 48%;
+      height: 48%;
+    }
+    .contents-text{
+      margin-right: 2rem;
+
+    }
+  }
+      .contents-fonts{
+      color: var(--color-white);
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      
+    }
+      .contents-fonts1{
+      color: var(--color-white);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .third-guide{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      animation: move-y 0.6s ease-in-out forwards;
+    .marahot-chicken{
+      
+      width:70%;
+      height: 70%;
+    }
+    .contents-text{
+      margin-right: 2rem;
+
+    }
+  }
+      .contents-fonts{
+      color: var(--color-white);
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      
+    }
+      .contents-fonts1{
+      color: var(--color-white);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+}
+
+
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+/* 창업혜택 */
+  .benefits{
+    animation: move-y 1s ease-in-out forwards;
+    padding-top: 80px;
+    background-color: var(--color-pigeonHb-700);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.benefits-header{
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+.benefits-header2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: var(--color-white);
+  color: var(--color-magenta);
+  border-radius: 100px;
+  padding: 32px 16px;
+  margin-bottom: 5rem;
+}
+
+.benefits-contents2{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  width: 80%;
+  background-color: var(--color-magenta);
+  border-radius: 32px;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+
+.benefits-header3{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-pigeonHb-600);
+  margin-bottom: 1rem;
+}
+
+.benefits-header4{
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.benefits-contents3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: var(--color-white);
+  border-radius: 32px;
+  padding: 20px;
+}
+
+.emoji{
+  width: 100px;
+  height: 100px;
+}
+.benefits-header5{
+  
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.benefits-header6{
+  
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.benefits-header7{
+  
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
+
+
+/* 창업절차 */
+.procedure{
+  padding-top: 80px;
+  background-color: var(--color-white);
+  
+}
+
+.contents-procedure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+  .procedure-text{
+    .procedure-header{
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+      .procedure-header2{
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+/* .card-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:8px;
+} */
+
+.course-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:1rem;
+  aspect-ratio: 1 / 1;
+}
+
+.card-content{
+  
+  background-color: var(--color-pigeonHb-700);
+
+
+  height: auto;
+
+  border-radius: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  
+}
+.text-title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.text-contents{
+  font-size: 1.5rem;
+}
+
+.number {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+/* Q&A */
+
+.qna{
+  
+  background-color: rgb(177, 177, 177);
+  padding: 160px 80px 100px 100px;
+  margin-top: 2rem;
+  .qna-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+    text-align: center;
+  }
+  .first{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 3px solid black;
+    .list-title{
+      font-size:1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .list-question{
+      margin: 0 auto;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  }
+
+  .question{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    .list-title{
+      font-size:1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .list-question{
+      margin: 0 auto;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  }
+
+    .answer{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    .list-title{
+      font-size:1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: red;
+    }
+    .list-answer{
+      margin: 0 auto;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      line-height: 1rem;
+        text-align: center;
+
+    }
+  }
+      .answer1{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+
+    .list-title{
+      font-size:1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: red;
+    }
+    .list-answer{
+      margin: 0 auto;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      line-height: 1rem;
+      text-align: center;
+
+    }
+  }
+
+  .list-title{
+    text-align: left;
+  }
+
+  
+}
+
+.fade-blur {
+  animation: fadeBlur 1s ease-out both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.section {
+  opacity: 0.3;
+  filter: blur(10px);
+}
+
+.section:target {
+  animation: focus 1s ease-out forwards;
+}
+
+@keyframes focus {
+  from {
+    opacity: 0.3;
+    filter: blur(10px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* 창업문의 */
+
+.inquiry{
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  .inquiry-title{
+    color: var(--color-white);
+  }
+  text-align: center;
+}
+
+.background-chicken {
+  height: 100%;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/image/information_sweet_korean_fried_chicken.jfif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inquiry-contents{
+  .checkbox{
+    margin-top: 1rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    font-size: 1rem;
+    padding-left: 8px;
+  }
+
+  .agree-checkbox{
+    width: 1rem;
+    height: 1rem;
+  }
+  .agree-text{
+    font-size: 1rem;
+    color: var(--color-white);
+  }
+  .first-line{
+    text-align: start;
+  }
+
+  .second-line{
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.third{
+  display: flex;
+  gap: 16px;
+}
+
+.buttons {
+  margin-left: 4rem;
+  display: flex;
+  border: 1px solid var(--color-white);
+  border-radius: 1rem;
+  margin-top: 1rem;
+
+}
+
+.button1{
+  font-size: 0.5rem;
+}
+
+.buttons input {
+  display: none;
+}
+
+.buttons label {
+  padding: 2px 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* 선택된 버튼 */
+.buttons input:checked + label {
+  background-color:var(--color-pigeonHb-700);
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.request-button{
+  margin: 2rem 0;
+  background-color: var(--color-pigeonHb-700);
+  color: var(--color-white);
+  padding: 4px 100px;
+  border-radius: 16px;
+}
