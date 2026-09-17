@@ -357,3 +357,81 @@ body{
     }
   }
 }
+
+.popup-mobile{
+  
+  
+  flex-direction: column;
+  height: 100%;
+  margin: 1rem 1rem;
+  line-height: 1.5;
+  border-radius: 16px;
+  
+
+  .popup-left{
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    margin: 1rem 1rem;
+    .popup-text{ 
+      color: gray;
+      
+      
+    }
+    .popup-image{
+    width: auto;
+    height: auto;
+    object-fit: fill;
+
+
+  }
+  }
+
+  .popup-right{
+    
+    line-height: 1.5;
+    .popup-text-strong{
+      margin: 10px;
+      font-weight: bold;
+    }
+    .price{
+      text-align: right;
+      color: var(--color-mustard-800);
+    }
+    .price-value{
+      text-align: right;
+    }
+    .recommend{
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: (--color-mustard-800);
+    }
+    .recommend-images{
+
+      display: flex;
+      .popup-imageri{
+        width: 50%;
+        text-align: center;
+      }
+      .popup-imagele{
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (width < 1000px) {
+    .popup-content{display: none;}
+    .popup-mobile{display: flex;}
+}
+
+@media (width > 1000px) {
+    .popup-content{display: flex;}
+    .popup-mobile{display: none;}
+}
