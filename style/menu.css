@@ -261,7 +261,35 @@ body{
   font-size: 2rem;
 }
 
+#popup1::backdrop {
+  background-color: var(--color-black);
+  opacity: 50%;
+  font-size: 2rem;
+}
 
+#popup2::backdrop {
+  background-color: var(--color-black);
+  opacity: 50%;
+  font-size: 2rem;
+}
+
+#popup3::backdrop {
+  background-color: var(--color-black);
+  opacity: 50%;
+  font-size: 2rem;
+}
+
+#popup4::backdrop {
+  background-color: var(--color-black);
+  opacity: 50%;
+  font-size: 2rem;
+}
+
+#popup5::backdrop {
+  background-color: var(--color-black);
+  opacity: 50%;
+  font-size: 2rem;
+}
 
 .popup-content{
   
